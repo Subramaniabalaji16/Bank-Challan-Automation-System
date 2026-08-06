@@ -1,0 +1,28 @@
+.heading{
+    font-family: "Quintessential", serif;
+    font-weight: 400;
+    font-size:xx-large;
+    font-style: normal;
+    text-shadow:2px 2px 5px #888888;
+}
+nav{
+    font-size: large;
+}
+li a{
+    font-family:cursive;
+}
+.img{
+    height: 100%;
+    width: 150%;
+}
+body{
+    font-family:'Times New Roman', Times, serif
+}
+.mission{
+    height: 70%;
+    width: 12%;
+    margin-top:0%;
+}
+footer{
+    margin-top: -5%;
+}

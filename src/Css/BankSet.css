@@ -1,0 +1,46 @@
+.heading{
+    font-family: "Quintessential", serif;
+    font-weight: 400;
+    font-size:xx-large;
+    font-style: normal;
+    text-shadow:2px 2px 5px #888888;
+}
+nav{
+    font-size: large;
+}
+li a{
+    font-family:cursive;
+}
+.hello{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+}
+label{ 
+    font-family: 'Times New Roman', Times, serif;
+    font-size:26px;
+}
+select{
+    background-color:aliceblue;
+    color: black;
+}
+.button{
+    margin-top:52px;
+    margin-left:40%;
+}
+.button:hover {
+    background-color: #dc3545; /* Lighter shade of red */
+    color: #fff; /* White text */
+    transform: scale(1.1); /* Slightly enlarge on hover */
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.borders{
+    box-shadow: 15px 4px 8px rgba(13, 110, 253, 0.25);
+    color:black;
+}
+img{
+    margin-top: -92px;
+}
+footer{
+    margin-top:-1.5%;
+}

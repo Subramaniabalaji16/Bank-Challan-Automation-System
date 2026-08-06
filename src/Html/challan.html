@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CASH WITHDRAWAL SLIP</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quintessential&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../Css/challan.css">
+    <link rel="stylesheet" href="../bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+</head>
+
+<body>
+<main class="container-fluid border border-dark border-3 mt-5" id="main">
+    <div class="con p-4">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-4 col-sm-4 col-md-4 col-lg-4">
+                    <img src="../Images/indianbank.jpg" class="img" id="bankImage">
+                </div>
+                <div class="col-8 col-sm-8 col-md-8 col-lg-8">
+                    <p class="t"><u>नकदी आहरण पर्ची</u>/<u><b>CASH WITHDRAWAL SLIP</b></u></p>
+                </div>
+            </div>
+
+            <!-- Transaction info -->
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-2 col-sm-2 col-md-2 col-lg-2 d-flex justify-content-center"></div>
+                    <div class="col-5 col-sm-5 col-md-5 col-lg-5">
+                        <p class="ftop">लेनदेन सिर्फ गृह शाखा में अनुमत है</p>
+                        <p class="fbot">(USABLE AT BASE BRANCH ONLY)</p>
+                    </div>
+                    <div class="col-5 col-sm-5 col-md-5 col-lg-5">
+                        <p class="btop">यह प्रपत्र चैक नहीं है।</p>
+                        <p class="bbot"><b>(THIS FORM IS NOT A CHEQUE)</b></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Payment details -->
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-8 col-sm-8 col-md-8 col-lg-8">
+                        <p class="ftop">मुझे/हमें/अदा करें</p>
+                        <p id="letterrupee" class="fbott">Pay to self/us the sum of &#8377;<u></u></p>
+                    </div>
+                    <div class="col-4 col-sm-4 col-md-4 col-lg-4 d-flex justify-content-end">
+                        <span class="ftop"><b>दिनांक/Date</b></span>
+                        <span class="h6" id="date"></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- User information (Name, Account, Phone) -->
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-7 col-sm-7 col-md-7 col-lg-7">
+                        <div><b>Name: </b><span id="name"></span></div><br>
+                        <div class="fbott"><b>to the debit of my/our Bank A/c No.</b></div>
+                        <table>
+                            <tr>
+                                <td id="d1" class="border border-2  border-dark p-2"></td>
+                                <td id="d2" class="border border-2  border-dark p-2"></td>
+                                <td id="d3" class="border border-2  border-dark p-2"></td>
+                                <td id="d4" class="border border-2  border-dark p-2"></td>
+                                <td id="d5" class="border border-2  border-dark p-2"></td>
+                                <td id="d6" class="border border-2  border-dark p-2"></td>
+                                <td id="d7" class="border border-2  border-dark p-2"></td>
+                                <td id="d8" class="border border-2  border-dark p-2"></td>
+                                <td id="d9" class="border border-2  border-dark p-2"></td>
+                                <td id="d10" class="border border-2 border-dark p-2"></td>
+                                <td id="d11" class="border border-2 border-dark p-2"></td>
+                                <td id="d12" class="border border-2 border-dark p-2"></td>
+                                <td id="d13" class="border border-2 border-dark p-2"></td>
+                                <td id="d14" class="border border-2 border-dark p-2"></td>
+                                <td id="d15" class="border border-2 border-dark p-2"></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="col-1 col-sm-1 col-md-1 col-lg-1"></div>
+                    <div class="col-4 col-sm-4 col-md-4 col-lg-4">
+                        <div><b>Phone Number: </b><span id="phoneNumber"></span></div><br>
+                        <side class="h2 mt-2">&#8377;</side>
+                        <span id="amount" class="border border-2 border-dark p-2"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- Office use section -->
+        <div class="container-fluid">
+            <div class="row">
+                <h3>For Office Use/<side class="h5">केवल कार्यालय प्रयोग हेतु</side></h3><br>
+                <div class="ftop">लेनदेन आईडी/Trans.id _________________________________________</div>
+                <div class="ftop">टोकन सं./Token No.____________________________________________</div>
+                <div class="ftop">श्री/श्रीमती/सुनी Pay to Sh./Smt./Ms. / को चूमतान करें _______________</div>
+                <br>
+                <div>_________________________________________________&#8377;_______________</div>
+                <br><br>
+                <div class="col-4 col-sm-4 col-md-4 col-lg-4">
+                    <div class="ftop">पारित करनेवाला अधिकारी के हस्ताक्षर</div>
+                    <div class="ftop">Signature of Passing officer<br>___________________________</div>
+                </div>
+                <div class="col-4 col-sm-4 col-md-4 col-lg-4">
+                    <div class="ftop">भुगतानकर्ता अधिकारी के हस्ताक्षर</div>
+                    <div class="ftop">Signature of Paying Official<br>_____________________________</div>
+                </div>
+                <div class="col-4 col-sm-4 col-md-4 col-lg-4">
+                    <p class="ftop"><center>खाता धारक के हस्ताक्षर /Signature of A/c Holder <br>खाता धारक ( करें) का नाम <br>
+                    Name(s) of A/c Holder(s)<br>________________________________</center></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<p id="bank" class="d-none"></p>
+<script>
+    window.onload = function () {
+        // Trigger print dialog as soon as the page is loaded
+        setTimeout(() => {
+            window.print(); // This triggers the print dialog
+        }, 1000); // A short delay before triggering print to ensure the page is fully loaded
+    };
+
+
+    function getQueryParams() {
+        const params = {};
+        const queryString = window.location.search.substring(1);
+        const pairs = queryString.split("&");
+        for (let i = 0; i < pairs.length; i++) {
+            const pair = pairs[i].split("=");
+            params[decodeURIComponent(pair[0])] = decodeURIComponent(pair[1]);
+        }
+        return params;
+    }
+
+    // Extract the parameters from the URL
+    const queryParams = getQueryParams();
+    console.log('Query Params:', queryParams);
+
+    // Decode the scanned data
+    const scannedData = decodeURIComponent(queryParams.scannedData || '');
+    console.log('Decoded Scanned Data:', scannedData);
+
+    // Parse the scanned data
+    const params = new URLSearchParams(scannedData);
+    const accountNumber = params.get('accNo') || 'N/A';
+    const name = params.get('name') || 'N/A';
+    const phoneNumber = params.get('phone') || 'N/A';
+    const amount = queryParams.amount || 'N/A';
+    
+    const accountDigits = accountNumber.split(''); // Split the account number into individual digits
+
+    // Display the account number digits
+    for (let i = 0; i < accountDigits.length; i++) {
+        const td = document.getElementById('d' + (i + 1)); // Get the corresponding <td> element
+        if (td) {
+            td.textContent = accountDigits[i]; // Set the text content of the <td> to the current digit
+        }
+    }
+    // Set the values on the page
+    document.getElementById('name').textContent = name;
+    document.getElementById('phoneNumber').textContent = phoneNumber;
+    document.getElementById('amount').textContent = amount;
+    document.getElementById('bank').textContent = localStorage.getItem('selectedBank') || 'N/A';
+    
+console.log(localStorage.getItem('selectedBank'));
+
+    // Update the date
+    document.getElementById('date').textContent = new Date().toLocaleDateString();
+
+        // Function to extract query parameters
+        function getQueryParams() {
+        const params = {};
+        const queryString = window.location.search.substring(1);
+        const pairs = queryString.split("&");
+        for (let i = 0; i < pairs.length; i++) {
+            const pair = pairs[i].split("=");
+            params[decodeURIComponent(pair[0])] = decodeURIComponent(pair[1]);
+        }
+        return params;
+    }
+    function updateBankImage(selectedBank) { 
+        const bankImage = document.getElementById("bankImage"); 
+        if (bankImage) 
+        { 
+            switch (selectedBank.toLowerCase()) 
+            { case "indian": 
+            bankImage.src = "../Images/indianbank.jpg"; 
+            break; 
+            case "sbi": 
+            bankImage.src = "../Images/statebank.jpg"; 
+            break; 
+            case "tmb": 
+            bankImage.src = "../Images/tmp - Copy.jpg"; 
+            break; 
+            default: 
+            bankImage.src = "../Images/defaultbank.jpg"; 
+            break; 
+        } 
+    } 
+    else 
+    { 
+        console.error("Bank image element not found"); } }  // Function to convert number to words
+    updateBankImage(localStorage.getItem('selectedBank') || 'default'); 
+    document.getElementById('bank').addEventListener('change', function() 
+    { const selectedBank = this.textContent; updateBankImage(selectedBank); });
+
+    const numberToWords = (num) => {
+        if (num === 0) return "Zero";
+
+        const singleDigits = ["", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine"];
+        const teens = ["", "Eleven", "Twelve", "Thirteen", "Fourteen", "Fifteen", "Sixteen", "Seventeen", "Eighteen", "Nineteen"];
+        const tens = ["", "", "Twenty", "Thirty", "Forty", "Fifty", "Sixty", "Seventy", "Eighty", "Ninety"];
+        const thousands = ["", "Thousand", "Million", "Billion"];
+
+        let result = '';
+        let idx = 0;
+
+        // Handle the conversion
+        while (num > 0) {
+            let temp = num % 1000;
+            if (temp !== 0) {
+                result = `${convertHundreds(temp)} ${thousands[idx]} ${result}`;
+            }
+            num = Math.floor(num / 1000);
+            idx++;
+        }
+        
+        return result.trim();
+    }
+
+    const convertHundreds = (num) => {
+        const singleDigits = ["", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine"];
+        const teens = ["", "Eleven", "Twelve", "Thirteen", "Fourteen", "Fifteen", "Sixteen", "Seventeen", "Eighteen", "Nineteen"];
+        const tens = ["", "", "Twenty", "Thirty", "Forty", "Fifty", "Sixty", "Seventy", "Eighty", "Ninety"];
+
+        let result = '';
+        if (num > 99) {
+            result += `${singleDigits[Math.floor(num / 100)]} Hundred `;
+            num = num % 100;
+        }
+        if (num > 10 && num < 20) {
+            result += teens[num - 10];
+        } else {
+            if (num >= 20) {
+                result += tens[Math.floor(num / 10)] + " ";
+                num = num % 10;
+            }
+            if (num > 0) {
+                result += singleDigits[num];
+            }
+        }
+        return result.trim();
+    }
+
+    // Convert and display the amount in words
+    const amountInWords = numberToWords(parseInt(amount));
+    document.getElementById('letterrupee').textContent += amountInWords;
+
+</script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+.heading{
+    font-family: "Quintessential", serif;
+    font-weight: 400;
+    font-size:xx-large;
+    font-style: normal;
+    text-shadow:2px 2px 5px #888888;
+}
+nav{
+    font-size: large;
+}
+li a{
+    font-family:cursive;
+}
+h1{
+    font-family:'Times New Roman', Times, serif;
+}
+img{
+    height: 42px;
+    width:122px;
+}
+.ftop,.btop,.fbot,.bbot,.fbott{
+    font-size: small;
+    font-weight: bold;
+}
+ .fbot{
+    margin-top: -4%;
+}
+.bbot{
+    margin-top: -4%;
+} 
+.fbott{
+    margin-top: -2%;
+}
+.money{
+    margin-top:-13%;
+    margin-left:18%;
+}
